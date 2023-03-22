@@ -9,13 +9,41 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>interval-tree</name>
-  <url>http://www.example.com</url>
+  <url>https://github.com/sbsdev/interval-tree</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+
+  <scm>
+    <connection>scm:git:git://github.com/sbsdev/interval-tree.git</connection>
+    <developerConnection>scm:git:git@github.com:sbsdev/interval-tree.git</developerConnection>
+    <url>https://github.com/sbsdev/interval-tree/tree/master</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>BSD License</name>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Christian Egli</name>
+      <email>christian.egli@sbs.ch</email>
+      <organization>Swiss Library for the Blind, Visually Impaired and Print Disabled</organization>
+      <organizationUrl>http://www.sbs.ch/</organizationUrl>
+    </developer>
+    <developer>
+      <name>Bernhard Wagner</name>
+      <email>web@bernhardwagner.net</email>
+      <organizationUrl>http://github.com/bwagner</organizationUrl>
+    </developer>
+  </developers>
 
   <dependencies>
     <dependency>
