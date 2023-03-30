@@ -8,6 +8,7 @@
   <version>1.1-SNAPSHOT</version>
 
   <name>interval-tree</name>
+  <description>An implementation of an interval tree, following the explanation from CLR</description>
   <url>https://github.com/sbsdev/interval-tree</url>
 
   <properties>
