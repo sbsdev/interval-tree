@@ -10,7 +10,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class IntervalTree {
     private final StatisticUpdate updater;
@@ -20,14 +21,12 @@ public class IntervalTree {
 	private final Map<RbNode, Integer> max;
 	private final Map<RbNode, Integer> min;
 
-    private final Logger logger;
+    private static final Logger logger = LogManager.getLogger(IntervalTree.class);
 
 
     public IntervalTree() {
 	this.updater = new IntervalTreeStatisticUpdate();
 	this.tree = new RbTree(this.updater);
-
-	this.logger = Logger.getLogger(this.getClass());
 
 	this.intervals = new WeakHashMap<RbNode, Interval>();
 	this.intervals.put(RbNode.NIL, null);

@@ -15,18 +15,19 @@ package org.arabidopsis.interval;
 // update() is propagated up ancestors, although this might be
 // overkill.
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class RbTree {
     RbNode root;
     RbNode NIL = RbNode.NIL;
     StatisticUpdate updater;
-    Logger logger;
+
+    private static final Logger logger = LogManager.getLogger(RbTree.class);
 
     public RbTree(StatisticUpdate updater) {
 	this.root = NIL;
 	this.updater = updater;
-	this.logger = Logger.getLogger(this.getClass());
     }
 
 
